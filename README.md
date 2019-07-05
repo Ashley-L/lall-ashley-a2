@@ -1,5 +1,4 @@
 # Ashley Lall
-Example theme from class, started in week 9.
 
 ```
 Deliverable:  Assignment 2, Part B
