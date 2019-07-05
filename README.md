@@ -7,7 +7,7 @@ Notes:        Hello world.
  I have reviewed the appropriate checklist before submitting this work
 
 Works Cited
-List any sites where code was copy/pasted from. Work not cited will be considered plagiarized.
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code
 
 Feedback
 I gave feedback to:
