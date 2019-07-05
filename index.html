@@ -28,10 +28,10 @@
       
         hopper-grace-lab-one
 -->
-  <header class="site-head container-topbar">
+  <header class="site-head">
     <nav>
       <!--Links to other sections of the site-->
-      <ul> 
+      <ul class="container-topbar"> 
         <li><a href="#">Super Awesome Site Name</a><!--Homepage--></li>
         <li><a href="#">Section 1</a></li>
         <li><a href="#">Section 2</a></li>
@@ -39,7 +39,7 @@
         <li><a href="#">Section 4</a></li>
       </ul>
     </nav>
-    <form >
+    <form class="in-the-corner">
       <!--Search-->
       <label for="search">Search</label>
       <input type="text" name="search" id="search">
@@ -184,10 +184,10 @@
     </section>
   </main>
 
-  <footer class="site-footer container-bottombar">
+  <footer class="site-footer ">
     <nav>
       <!--Links to other sections of the site-->
-      <ull">
+      <ul class="container-bottombar">
         <li><a href="#">Super Awesome Site Name</a><!--Homepage--></li>
         <li><a href="#">Section 1</a></li>
         <li><a href="#">Section 2</a></li>
@@ -195,9 +195,10 @@
         <li><a href="#">Section 4</a></li>
       </ul>
     </nav>
+    <div class="right-side">
     <section>
         <!--Subscribe-->
-        <form>
+        <form class="subscribe">
           <label for="subscribe">Email</label>
           <input type="text" name="subscribe" id="subscribe">
           <button>Subscribe</button>
@@ -205,14 +206,17 @@
       </section>
     <section>
       <!--Personal social media-->
-      <ul>
+      <ul class="footer-icons">
         <li><a href="https://www.instagram.com/ashleydesassy/"><img src="img/instagram-logo-small.png"
               alt="instagram icon"></a></li>
         <li><a href="https://twitter.com/ashleydesassy"><img src="img/twitter-icon.png" alt="twitter icon"></a></li>
       </ul>
     </section>
-    <div><img src="img/ashley-logo-small.png" alt="Ashley logo"></div>
-    <div>&copy; 2019 Ashley Lall</div>
+    <div class="logo-copyright">
+      <div><img src="img/ashley-logo-small.png" alt="Ashley logo"></div>
+      <div>&copy; 2019 Ashley Lall</div>
+    </div>
+  </div>
   </footer>
 </body>
 

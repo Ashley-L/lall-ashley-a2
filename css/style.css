@@ -150,18 +150,56 @@ GENERIC CLASSES
   text-align: center;
 }
 
-  
+.in-the-corner {
+  display: inline-block;
+}
 .inline-icons li {
   display: inline;
 }
 
-.inline-block form {
-  display: inline-block;
-}
 
-.inline-block a {
+/*Footer*/
+.container-bottombar {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.container-bottombar li {
+text-decoration: none;
+padding: .5em;
+}
+.container-bottombar a {
   color: var(--back);
 }
+.container-bottombar a:hover {
+  color: var(--mid);
+}
+
+
+.subscribe {
+  display: inline-block;
+  padding-left: 1.5em;
+  padding-top: 1em;
+}
+.subscribe label {
+  color: var(--back);
+}
+
+.footer-icons li {
+display: inline-block;
+padding-left: 1.5em;
+padding-top: 1em;
+}
+
+.logo-copyright {
+  display: inline-block;
+  color: var(--back);
+  padding-left: 1.5em;
+}
+
+/*.right-side {
+  padding-left: 10em;
+  padding-right: 1.5em;
+}*/
 
 /*******************************
 SPECIFIC CLASSES
