@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral:400,400i,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+/*CSS VARIABLES*/
+:root {
+/*COLOURS*/
+--fore: #000066;
+--comp-fore: #45427C; /*this is supposed to be a .7 transparency of fore but the rgba wasn't working and I don't know how to show it w/ hex*/
+--mid: #085fa6;
+--back:#e6fafc;
+--text: #0e0918;
+--accent:#d809a6;
+
+/*FONTS*/
+--serif:'Spectral', garamond, serif;
+--sans:'Roboto', helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--back);
+  color: var(--text);
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: var(--sans);
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/*******************************
+TYPE DEFINITIONS
+*******************************/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+  margin: 1rem 0;
+}
+
+h4, h5, h6 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+h1, h4 {color: var(--fore);}
+h2, h5 {color: var(--comp-fore);}
+h3, h6 {color: var(--mid);}
+  
+
+h1 {
+  font-weight: 700;
+  color: var(--fore);
+  font-size: 2em;
+  padding-top: 1em;
+  margin-left: none;
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--comp-fore);
+  font-size: 1.8em;
+}
+
+h3 {
+  font-weight: 400;
+  color: var(--mid);
+  font-size: 1.5em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a {
+  color: var(--accent);
+}
+strong {
+  font-size: 500;
+  letter-spacing: .1em;
+}
+
+figcaption {
+font-family: var(--serif);
+}
+
+blockquote > cite {
+font-family: var(--serif);
+font-style: italic;
+padding-top: none;
+}
+/*******************************
+GENERIC CLASSES
+*******************************/
+
+.container-full {
+  max-width: 100%;
+}
+
+.container-main{
+  max-width: 750px;
+  margin: auto;
+}
+
+
+
+.inline-block li {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center; 
+  background-color: var(--mid);
+  color: var(--back);
+}
+
+.inline-block form {
+  display: inline-block;
+}
+
+.inline-block a {
+  color: var(--back);
+}
+
+/*******************************
+SPECIFIC CLASSES
+*******************************/
+.site-head, site-main, site-footer {
+
+}
+.site-head {
+  background-color: var(--fore);
+}
+
+.site-main {
+  background-color: var(--back);
+}
+
+.site-footer {
+  background-color: var(--fore);
+  max-width: 100%;
+}
+
