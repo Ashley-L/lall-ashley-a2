@@ -11,7 +11,7 @@ Notes:        Hello world.
 - [X] I have reviewed the appropriate checklist before submitting this work
 
 ## Works Cited
-List any sites where code was copy/pasted from. Work not cited will be considered plagurized.
+N/A
 
 ## Feedback
 I gave feedback to:
