@@ -34,18 +34,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--serif);
   margin: 1rem 0;
   padding-bottom: none;
-}
-
-h2, h3, h4, h5, h6 {
   padding-top: 1em;
 }
-
 h4, h5, h6 {
   font-weight: 700;
   font-style: italic;
   font-size: 1.2em;
 }
-
 h1, h4 {color: var(--fore);}
 h2, h5 {color: var(--comp-fore);}
 h3, h6 {color: var(--mid);}
@@ -81,10 +76,14 @@ img {
   margin: 0 auto;
 }
 
-figcaption { /*Don't know how to move this over*/
-  display: block;
+figcaption { /*Was trying to get the figure caption to be left aligned with the images, specifically with image in Characters section*/
+  font-family: var(--serif);
   margin: 0 auto;
 }
+
+cite {
+  font-family: var(--serif);
+  }
 
 ol > li {
   margin-left: 2em;
@@ -105,9 +104,7 @@ strong {
 em {
   font-style: italic;
 }
-figcaption {
-font-family: var(--serif);
-}
+
 
 blockquote {
   font-style: italic; 
@@ -123,19 +120,14 @@ font-style: italic;
 /*******************************
 GENERIC CLASSES
 *******************************/
-
 .container-topbar .container-bottombar{
   max-width: 100%;
 }
-
 .container-main{
   max-width: 800px;
   margin: auto;
 }
 
-.container-topbar {
-  max-width: 100%
-}
 .container-topbar li {
   display: inline-block;
   padding-left: 1.5em;
@@ -160,14 +152,16 @@ GENERIC CLASSES
   color: var(--back);
 }
 
-/*share icons under first image, not sure how to center them to the page/under ht main image, or how to resize properly*/
+/*share icons under first image, not sure how to center them to the page/under the main image, or how to resize properly (they're both different sizes)*/
 .inline-icons li {
   display: inline-block; 
+  margin: auto;
 }
-.inline-icons ul {
-  display: block;
- padding-left: 13em;
- padding-right: 13em;
+.inline-icons img {
+  max-width:25%;
+}
+.inline-icons a {
+  margin: auto;
 }
 
 
@@ -187,7 +181,7 @@ padding: .5em;
   color: var(--mid);
 }
 
-
+/*subscribe*/
 .subscribe {
   display: inline-block;
   padding-left: 1.5em;
@@ -202,14 +196,22 @@ display: inline-block;
 padding-left: 1.5em;
 padding-top: 1em;
 }
+.footer-icons img {
+  max-width: 25%;
+  margin-left: 0;
+}
 
 .logo-copyright {
   display: inline-block;
   color: var(--back);
   padding-left: 1.5em;
 }
+.logo-copyright img {
+  max-width: 40%;
+  margin-left: 0;
+}
 
-/*.right-side {
+/*.right-side {   was trying to move these items over to the right and to the top of the footer
   padding-left: 10em;
   padding-right: 1.5em;
 }*/
