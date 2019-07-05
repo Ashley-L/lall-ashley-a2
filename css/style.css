@@ -57,6 +57,7 @@ h1 {
   font-size: 2em;
   padding-top: 1em;
   margin-left: none;
+  text-align: center;
 }
 
 h2 {
@@ -152,9 +153,21 @@ GENERIC CLASSES
 
 .in-the-corner {
   display: inline-block;
+  padding-left: 1.5em;
+  padding-top: 1em;
 }
+.in-the-corner label {
+  color: var(--back);
+}
+
+/*share icons under first image, not sure how to center them to the page/under ht main image, or how to resize properly*/
 .inline-icons li {
-  display: inline;
+  display: inline-block; 
+}
+.inline-icons ul {
+  display: block;
+ padding-left: 13em;
+ padding-right: 13em;
 }
 
 
@@ -204,9 +217,6 @@ padding-top: 1em;
 /*******************************
 SPECIFIC CLASSES
 *******************************/
-.site-head, site-main, site-footer {
-
-}
 .site-head {
   background-color: var(--fore);
 }
