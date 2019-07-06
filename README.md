@@ -16,3 +16,5 @@ N/A
 ## Feedback
 I gave feedback to:
 - https://github.com/mehrnoush68/mehrnoush
+- https://github.com/kim-nguyen-idd/nguyen-kim-article/
+- https://github.com/naziasabah/nurasabah-nazia-a2/
