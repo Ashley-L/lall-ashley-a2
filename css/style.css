@@ -134,6 +134,7 @@ GENERIC CLASSES
   display: inline-block;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  padding-top: 1em;
   max-width: 100%;
   text-align: center; 
 }
@@ -145,6 +146,7 @@ GENERIC CLASSES
   text-align: center;
 }
 
+/*was trying to get search bar in top right corner*/
 .in-the-corner {
   display: inline-block;
   padding-left: 1.5em;
@@ -157,7 +159,7 @@ GENERIC CLASSES
 /*share icons under first image, not sure how to center them to the page/under the main image, or how to resize properly (they're both different sizes)*/
 .inline-icons li {
   display: inline-block; 
-  margin: auto;
+  margin: 0 auto;
   /*text-align: center; added this from one of the suggestions but it doesn't seem to work since it's not text.*/
 }
 .inline-icons img:nth-child(1) {
@@ -211,6 +213,7 @@ padding-top: 1em;
   display: inline-block;
   color: var(--back);
   padding-left: 1.5em;
+  padding-bottom: 2em;
 }
 .logo-copyright img {
   max-width: 40%;
@@ -222,8 +225,16 @@ padding-top: 1em;
   padding-bottom: 1em;
  /* display: block;*/
 }
-.comment label {
-  padding-bottom: 1em;
+.comment h2 {
+  border-top: .125em solid var(--fore);
+}
+.comment textarea {
+  min-width: 50%;
+  max-width: 100%;
+  min-height: 25%;
+}
+.comment button {
+  display: inline-block;
 }
 
 /*.box-right {   
