@@ -78,7 +78,7 @@ img {
 
 figcaption { /*Was trying to get the figure caption to be left aligned with the images, specifically with image in Characters section*/
   font-family: var(--serif);
-  margin: 0 auto;
+  margin: inherit;
 }
 
 cite {
@@ -128,6 +128,8 @@ GENERIC CLASSES
   margin: auto;
 }
 
+
+/*Header - topbar*/
 .container-topbar li {
   display: inline-block;
   padding-left: 1.5em;
@@ -156,9 +158,13 @@ GENERIC CLASSES
 .inline-icons li {
   display: inline-block; 
   margin: auto;
+  /*text-align: center; added this from one of the suggestions but it doesn't seem to work since it's not text.*/
 }
-.inline-icons img {
-  max-width:25%;
+.inline-icons img:nth-child(1) {
+  max-width:20%;
+}
+.inline-icons img:nth-child(2) {
+  max-width: 30%;
 }
 .inline-icons a {
   margin: auto;
@@ -211,10 +217,31 @@ padding-top: 1em;
   margin-left: 0;
 }
 
-/*.right-side {   was trying to move these items over to the right and to the top of the footer
-  padding-left: 10em;
-  padding-right: 1.5em;
-}*/
+/*was trying to get the comment box under the label*/
+.comment { 
+  padding-bottom: 1em;
+ /* display: block;*/
+}
+.comment label {
+  padding-bottom: 1em;
+}
+
+/*.box-right {   
+  /*was trying to have navigation on the left and icons on the right, read online about columns and flexboxes and floats but couldn't figure it out
+  align-self: right; 
+} 
+*/
+.container-center {
+max-width: 800px;
+}
+/*.box-left {
+  float: left;
+}
+.box-right {
+float: right;
+}
+*/
+
 
 /*******************************
 SPECIFIC CLASSES

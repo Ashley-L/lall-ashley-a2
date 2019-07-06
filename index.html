@@ -18,8 +18,7 @@
       Student #:    101222885
       Email:        ashley.lall@georgebrown.ca
       Submitted:    June 23, 2019
-      Notes:        I used the automatic formatting to make everything aligned but it seems to make the formatting for <p> weird. I also designed this as a personal blog which is why I included a personal logo, personal social media links, and my name as the website title.
-
+      Notes:        I left comments throughout the html and css files since some of the things I wanted to do weren't working.
 
       [ ] I have reviewed the appropriate checklist before submitting this work
 
@@ -31,8 +30,10 @@
   <header class="site-head">
     <nav>
       <!--Links to other sections of the site-->
-      <ul class="container-topbar"> 
-        <li><a href="#">Super Awesome Site Name</a><!--Homepage--></li>
+      <ul class="container-topbar">
+        <li><a href="#">Super Awesome Site Name</a>
+          <!--Homepage-->
+        </li>
         <li><a href="#">Section 1</a></li>
         <li><a href="#">Section 2</a></li>
         <li><a href="#">Section 3</a></li>
@@ -43,15 +44,15 @@
         <label for="search">Search</label>
         <input type="text" name="search" id="search">
         <button>Go</button>
-     
+
       </form>
     </nav>
-   
+
   </header>
 
   <main class="site-main container-main">
     <header>
-      <h1>Why You Should Watch Gravity Falls <small>No, seriously.</small></h1>
+      <h1>Why You Should Watch Gravity Falls <small>(No, seriously.)</small></h1>
       <div><img src="img/gravity-falls-promo.jpg" alt="Promotional image for Gravity Falls"></div>
       <section class="inline-icons">
         <!--share article-->
@@ -61,7 +62,14 @@
         </ul>
       </section>
       <div>Posted <time>June 23<sup>rd</sup>, 2019</time></div>
-      <div><code>Date updated goes here: <time>day<sup>st nd rd</sup>, 2019</time></code></div>
+      <div>
+        <pre>
+          <code>
+          Date updated goes here: 
+          <time>day<sup>st nd rd</sup>, 2019</time></code>
+        </pre>
+      </div>
+      
     </header>
 
     <div>
@@ -93,7 +101,7 @@
           this show is intense, and there are major plot clues hidden in plain sight. When the show was airing, fans
           were always discussing theories and possible plot lines. And when thousands of theorists come together, some
           ideas are bound to be right.</p>
-        <article>
+        <article> <!--One issue said to remove this article tag but I want to keep it in since it's a separate contained subsection of 'Plot'-->
           <h3>Cryptograms and Ciphers</h3>
           <figure>
             <img src="img/cipher-wheel.png" alt="Gravity Falls cipher wheel">
@@ -141,25 +149,37 @@
         <p>Not to be dramatic, but I just really <strong>love</strong> the art direction in this show. Like, mystical,
           spooky, whatever it is - you know it looks amazing. I have a bunch of stills from the show as rotating
           wallpapers on my laptop.</p>
-        <article>
-          <h3>Music</h3>
+    
           <p>I'm going to lump music under this section because, really, the music in this show is an art form. <a
               href="https://bradbreeck.com/"> Brad Breeck</a> has composed a wonderful score for this show. It can be
             fun in one moment and heart-wrenching in the next. I hear the music in this show and I just wanna... learn
             these songs on the piano, and I can barely play the piano. And who doesn't love that <a
               href="https://www.youtube.com/watch?v=X2DUpDxFJyg">iconic theme song</a>.
-          <h4>h4 heading looks like this</h4>
-          I love Gravity Falls. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ad. Voluptatibus, voluptas iusto, molestias fugiat similique unde eum nulla inventore earum porro impedit! A, iure? Hic excepturi dolorem tenetur veniam.
-          <h5>h5 heading looks like this</h5>
-          I love Gravity Falls. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem illum voluptatem ratione repellat dolorem labore deserunt voluptas alias, nihil minus consequuntur? Harum voluptate ex libero nesciunt aspernatur? Pariatur, dolore!
-          <h6>h6 heading looks like this</h6>
-          I love Gravity Falls. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde enim nam ab iste, aut doloremque ut fuga! Rem, esse officia magni consequatur a, fuga doloribus voluptatum repellendus quae dolores ea.
+            
+            <article>
+              <h4>h4 heading looks like this</h4>
+            I love Gravity Falls. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ad. Voluptatibus,
+            voluptas iusto, molestias fugiat similique unde eum nulla inventore earum porro impedit! A, iure? Hic
+            excepturi dolorem tenetur veniam.
+            </article>
+            <article>
+            <h5>h5 heading looks like this</h5>
+            I love Gravity Falls. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem illum
+            voluptatem ratione repellat dolorem labore deserunt voluptas alias, nihil minus consequuntur? Harum
+            voluptate ex libero nesciunt aspernatur? Pariatur, dolore!
+            </article>
+            <article>
+            <h6>h6 heading looks like this</h6>
+            I love Gravity Falls. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde enim nam ab iste, aut
+            doloremque ut fuga! Rem, esse officia magni consequatur a, fuga doloribus voluptatum repellendus quae
+            dolores ea.
+          </article>
           </p>
-        </article>
+        
       </section>
       <section>
         <!--Conclusion-->
-        <h2>Watch the Show <small>No, seriously</small></h2>
+        <h2>Watch the Show <small>(No, seriously)</small></h2>
         <p>I've watched Gravity Falls multiple times now. What starts off as <q>hey, let me watch one of my fave
             episodes</q> quickly turns into <q>whoops I've just watched an entire season instead of studying for
             exams.</q> <a href="https://i.imgur.com/5GNklOm.jpg">It
@@ -174,30 +194,33 @@
         </p>
       </section>
     </div>
-    
+
     <section>
       <!--Comments-->
       <h2>Comments</h2>
-      <form>
+      <form class="comment">
         <label for="comment">Drop a line</label>
         <textarea name="comment" id="comment"></textarea>
       </form>
+      <button>Submit</button>
     </section>
   </main>
 
-  <footer class="site-footer ">
-    <nav>
+  <footer class="site-footer container-center">
+    <nav class="container-bottombar">
       <!--Links to other sections of the site-->
-      <ul class="container-bottombar">
-        <li><a href="#">Super Awesome Site Name</a><!--Homepage--></li>
+      <ul class="box-left">
+        <li><a href="#">Super Awesome Site Name</a>
+          <!--Homepage-->
+        </li>
         <li><a href="#">Section 1</a></li>
         <li><a href="#">Section 2</a></li>
         <li><a href="#">Section 3</a></li>
         <li><a href="#">Section 4</a></li>
       </ul>
     </nav>
-    <div class="right-side">
-    <section>
+    <div class="box-right">
+      <section>
         <!--Subscribe-->
         <form class="subscribe">
           <label for="subscribe">Email</label>
@@ -205,22 +228,20 @@
           <button>Subscribe</button>
         </form>
       </section>
-    <section>
-      <!--Personal social media-->
-      <ul class="footer-icons">
-        <li><a href="https://www.instagram.com/ashleydesassy/"><img src="img/instagram-logo-small.png"
-              alt="instagram icon"></a></li>
-        <li><a href="https://twitter.com/ashleydesassy"><img src="img/twitter-icon.png" alt="twitter icon"></a></li>
-      </ul>
-    </section>
-    <div class="logo-copyright">
-      <div><img src="img/ashley-logo-small.png" alt="Ashley logo"></div>
-      <div>&copy; 2019 Ashley Lall</div>
+      <section>
+        <!--Personal social media-->
+        <ul class="footer-icons">
+          <li><a href="https://www.instagram.com/ashleydesassy/"><img src="img/instagram-logo-small.png"
+                alt="instagram icon"></a></li>
+          <li><a href="https://twitter.com/ashleydesassy"><img src="img/twitter-icon.png" alt="twitter icon"></a></li>
+        </ul>
+      </section>
+      <div class="logo-copyright">
+        <div><img src="img/ashley-logo-small.png" alt="Ashley logo"></div>
+        <div>&copy; 2019 Ashley Lall</div>
+      </div>
     </div>
-  </div>
   </footer>
 </body>
 
 </html>
-
-
